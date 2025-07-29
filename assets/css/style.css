@@ -127,18 +127,17 @@ body {
     transform: rotate(360deg);
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
+.hamburger-icon {
     cursor: pointer;
+    font-size: 28px;
+    color: var(--text-secondary);
+    transition: transform 0.3s ease;
+    display: none;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background: #333;
-    margin: 3px 0;
-    transition: 0.3s;
+.hamburger-icon i {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: var(--primary-color);
 }
 
 /* Section Hero */
@@ -880,7 +879,7 @@ section {
 
 /*Responsive Design*/
 @media (max-width: 768px) {
-    .hamburger {
+    .hamburger-icon {
         display: flex;
     }
 

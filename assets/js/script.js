@@ -1,10 +1,20 @@
 // Navigation mobile
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelector('.hamburger-icon');
 const navMenu = document.querySelector('.nav-menu');
+const icon = hamburger.querySelector('i');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+
+    // Changer l'icône Font Awesome
+    if (icon.classList.contains('fa-bars')) {
+        icon.classList.replace('fa-bars', 'fa-xmark');
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        icon.classList.replace('fa-xmark', 'fa-bars');
+        icon.style.transform = 'rotate(0deg)';
+    }
 });
 
 // Fermer le menu mobile en cliquant sur un lien
@@ -26,7 +36,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 
 // Initialiser la navigation quand le DOM est prêt
 document.addEventListener('DOMContentLoaded', function() {
