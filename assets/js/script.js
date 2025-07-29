@@ -3,6 +3,9 @@ const hamburger = document.querySelector('.hamburger-icon');
 const navMenu = document.querySelector('.nav-menu');
 const icon = hamburger.querySelector('i');
 
+// Charger le son de clic
+const clickSound = new Audio('assets/sounds/click.mp3'); // Mets ici le bon chemin
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
@@ -15,6 +18,10 @@ hamburger.addEventListener('click', () => {
         icon.classList.replace('fa-xmark', 'fa-bars');
         icon.style.transform = 'rotate(0deg)';
     }
+
+    // Jouer le son de clic
+    clickSound.currentTime = 0; // Réinitialise le son à chaque clic
+    clickSound.play();
 });
 
 // Fermer le menu mobile en cliquant sur un lien
@@ -307,7 +314,8 @@ window.addEventListener('scroll', () => {
 });
 
 // Typing effect pour le titre (optionnel)
-function typeWriter(element, text, speed = 100) {
+// Typing effect pour le titre (optionnel)
+function typeWriter(element, text, speed = 10) {
     let i = 0;
     element.innerHTML = '';
     
