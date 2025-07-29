@@ -889,7 +889,8 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
         width: 100%;
         text-align: center;
         transition: 0.3s;
