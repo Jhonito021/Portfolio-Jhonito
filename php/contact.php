@@ -1,6 +1,6 @@
 <?php
 // Configuration
-$whatsapp_number = "261341234567"; // ← Remplacez par VOTRE numéro WhatsApp sans "+" ni espace
+$whatsapp_number = "261385101400"; // ← Remplacez par VOTRE numéro WhatsApp sans "+" ni espace
 
 // Fonction pour nettoyer les données
 function clean_input($data) {
