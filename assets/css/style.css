@@ -888,9 +888,10 @@ section {
         position: fixed;
         left: -100%;
         top: 70px;
-        flex-direction: column;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(13px);
+        display: flex;
+        justify-content: space-around;
+        background: rgba(7, 7, 7, 0.932);
+        backdrop-filter: blur(10px);
         width: 100%;
         text-align: center;
         transition: 0.3s;
