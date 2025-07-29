@@ -39,13 +39,14 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid var(--primary-color);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-glow);
+    backdrop-filter: blur(13px);
 }
 
 .nav-container {
@@ -810,6 +811,11 @@ section {
     border: 2px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-15px);
 }
 
 .contact-form::before {

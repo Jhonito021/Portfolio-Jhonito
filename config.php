@@ -18,9 +18,9 @@ $config = array(
     
     // Réseaux sociaux
     'social' => array(
-        'linkedin' => 'https://linkedin.com/in/votre-profil',
-        'github' => 'https://github.com/votre-username',
-        'twitter' => 'https://twitter.com/votre-username',
+        'WhatsApp' => 'https://wa.me/261385101400',
+        'github' => 'https://github.com/Jhonito021',
+        'twitter' => 'mailto:jhonito021@gmail.com',
         'portfolio' => 'https://votre-portfolio.com'
     ),
     
@@ -39,32 +39,44 @@ $config = array(
     // Formation
     'education' => array(
         array(
-            'period' => '2020-2023',
-            'title' => 'Formation en développement web',
-            'school' => 'École ou centre de formation'
+            'period' => '2024-2025',
+            'title' => 'Développement web (Front-end & Back-end)',
+            'school' => 'ESMIA'
         ),
         array(
-            'period' => '2018-2020',
-            'title' => 'Baccalauréat en informatique',
-            'school' => 'Université ou école'
-        )
+            'period' => '2023-2024',
+            'title' => 'Ingénierie en Signaux et Système Associées',
+            'school' => 'ISGEI'
+        ),
+
+        array(
+            'period' => '2022-2023',
+            'title' => 'Baccalauréat technique',
+            'school' => 'LTP'
+        ),
+
+        array(
+            'period' => '2021-2022',
+            'title' => 'Brevet d\'etude Professionnel',
+            'school' => 'LTP'
+        ),
     ),
     
     // Projets
     'projects' => array(
         array(
-            'name' => 'Site E-commerce',
-            'description' => 'Développement d\'un site e-commerce complet avec panier d\'achat et système de paiement.',
+            'name' => 'Site Medical',
+            'description' => 'Développement d\'un site site medical pour voir les médecins, consultants et patients.',
             'image' => 'assets/images/project1.jpg',
-            'technologies' => array('HTML', 'CSS', 'JavaScript', 'PHP'),
+            'technologies' => array('HTML', 'CSS', 'JavaScript', 'PHP', 'SQL'),
             'github' => 'https://github.com/votre-username/projet-ecommerce',
             'demo' => 'https://demo-projet.com'
         ),
         array(
-            'name' => 'Application de Gestion',
-            'description' => 'Application web pour la gestion de tâches et de projets avec interface responsive.',
+            'name' => 'Agenda Personnel',
+            'description' => 'Application web pour la gestion de tâches et de l\'emploi du temps avec interface responsive.',
             'image' => 'assets/images/project2.jpg',
-            'technologies' => array('React', 'Node.js', 'MongoDB'),
+            'technologies' => array('HTML', 'CSS', 'JavaScript', 'SQL'),
             'github' => 'https://github.com/votre-username/app-gestion',
             'demo' => 'https://app-gestion.com'
         ),
@@ -72,7 +84,7 @@ $config = array(
             'name' => 'Portfolio Personnel',
             'description' => 'Portfolio web moderne et responsive pour présenter mes projets et compétences.',
             'image' => 'assets/images/project3.jpg',
-            'technologies' => array('HTML', 'CSS', 'JavaScript'),
+            'technologies' => array('HTML', 'CSS', 'JavaScript', 'PHP'),
             'github' => 'https://github.com/votre-username/portfolio',
             'demo' => 'https://votre-portfolio.com'
         )
@@ -80,7 +92,7 @@ $config = array(
     
     // Configuration du formulaire de contact
     'contact' => array(
-        'email' => 'votre.email@example.com',
+        'email' => 'jhonito021@gmail.com',
         'subject_prefix' => 'Portfolio - '
     ),
     
@@ -89,7 +101,7 @@ $config = array(
         'title' => 'Mon Portfolio - Développeur Web',
         'description' => 'Portfolio personnel présentant mes projets et compétences en développement web',
         'keywords' => 'développeur web, portfolio, projets, compétences, HTML, CSS, JavaScript, PHP',
-        'author' => 'Votre Nom',
+        'author' => 'Solonotiavina Jhonito',
         'language' => 'fr'
     )
 );

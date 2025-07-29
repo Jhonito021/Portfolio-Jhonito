@@ -1,6 +1,6 @@
 <?php
 // Configuration
-$to_email = "votre.email@example.com"; // Remplacez par votre email
+$to_email = "jhonito021@gmail.com"; 
 $subject_prefix = "Portfolio - ";
 
 // Headers pour éviter le spam
