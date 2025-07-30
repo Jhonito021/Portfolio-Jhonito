@@ -572,7 +572,6 @@ section {
     background: var(--dark-bg);
     position: relative;
     z-index: 1;
-
 }
 
 .projects::before {
@@ -637,7 +636,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image img {
