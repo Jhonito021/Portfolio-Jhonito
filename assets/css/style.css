@@ -550,21 +550,58 @@ section {
 .skill-item i {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
-.skill-item:hover i {
-    color: var(--secondary-color);
+.skill-item i {
     transform: scale(1.2);
+}
+
+.skill-item i.html {
+    color: #e34f26;
+}
+
+.skill-item i.css {
+    color: #1572b6;
+}
+
+.skill-item i.JavaScript {
+    color: #f7df1e;
+}
+
+.skill-item i.php {
+    color: #8892bf;
+}
+
+.skill-item i.sql {
+    color: #00758f;
 }
 
 .skill-item span {
     font-weight: 500;
-    color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+}
+
+.skill-item span.html {
+    color: #e34f26;
+}
+
+.skill-item span.css {
+    color: #1572b6;
+}
+
+.skill-item span.JavaScript {
+    color: #f7df1e;
+}
+
+.skill-item span.php {
+    color: #8892bf;
+}
+
+.skill-item span.sql {
+    color: #00758f;
 }
 
 /* Section Projets */
