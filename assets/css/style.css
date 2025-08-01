@@ -167,6 +167,17 @@ body {
     animation: heroGlow 10s ease-in-out infinite alternate;
 }
 
+video.foutre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
 @keyframes heroGlow  {
     0% {
         opacity: 0.1;
@@ -553,27 +564,27 @@ section {
     transition: all 0.3s ease;
 }
 
-.skill-item i {
+i {
     transform: scale(1.2);
 }
 
-.skill-item i.html {
+i.html {
     color: #e34f26;
 }
 
-.skill-item i.css {
+i.css {
     color: #1572b6;
 }
 
-.skill-item i.JavaScript {
+i.JavaScript {
     color: #f7df1e;
 }
 
-.skill-item i.php {
+i.php {
     color: #8892bf;
 }
 
-.skill-item i.sql {
+i.sql {
     color: #00758f;
 }
 
@@ -701,25 +712,19 @@ section {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .tech-tag {
-    background: var(--dark-bg);
-    color: var(--text-primary);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-    background: var(--primary-color);
-    color: var(--text-primary);
-    transform: scale(1.05);
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 .project-links {
