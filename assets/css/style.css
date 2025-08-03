@@ -851,8 +851,6 @@ i.sql {
 }
 
 .social-link:hover {
-    background: var(--secondary-color);
-    color: var(--dark-bg);
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
 }
@@ -913,7 +911,7 @@ i.sql {
     color: var(--text-secondary);
 }
 
-/*Foote*/
+/*Footer*/
 .footer {
     background: var(--dark-bg);
     color: var(--text-primary);
