@@ -803,7 +803,6 @@ i.sql {
 }
 
 .contact-item:hover {
-    background: var(--dark-bg);
     color: var(--text-primary);
     transform: translateX(10px);
 }
