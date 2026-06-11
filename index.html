@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="manifest.json">
 </head>
 <body>
     <!-- Navigation -->
@@ -237,11 +238,18 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sw.js"></script>
     <script>
         const date = new Date();
         const option = { year: 'numeric', month: 'long'};
         const dates = date.toLocaleDateString(undefined, option);
         document.getElementById ('date').textContent = dates;
+
+        if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(() => console.log("Service Worker enregistré ✅"))
+    .catch(err => console.error("Erreur Service Worker ❌", err));
+}
     </script>
 </body>
-</html> 
+</html>
