@@ -568,26 +568,6 @@ i {
     transform: scale(1.2);
 }
 
-i.html {
-    color: #e34f26;
-}
-
-i.css {
-    color: #1572b6;
-}
-
-i.JavaScript {
-    color: #f7df1e;
-}
-
-i.php {
-    color: #8892bf;
-}
-
-i.sql {
-    color: #00758f;
-}
-
 .skill-item span {
     font-weight: 500;
     text-transform: uppercase;
@@ -595,24 +575,36 @@ i.sql {
     font-size: 0.9rem;
 }
 
-.skill-item span.html {
+.skill-item span.html, i.html {
     color: #e34f26;
 }
 
-.skill-item span.css {
+.skill-item span.css, i.css {
     color: #1572b6;
 }
 
-.skill-item span.JavaScript {
+.skill-item span.JavaScript, i.JavaScript {
     color: #f7df1e;
 }
 
-.skill-item span.php {
+.skill-item span.php, i.php {
     color: #8892bf;
 }
 
-.skill-item span.sql {
+.skill-item span.sql, i.sql {
     color: #00758f;
+}
+
+.skill-item span.react, i.react {
+    color: #61dafb;
+}
+
+.skill-item span.python, i.python {
+    color: #3776ab;
+}
+
+.skill-item span.java, i.java {
+    color: #007396;
 }
 
 /* Section Projets */
