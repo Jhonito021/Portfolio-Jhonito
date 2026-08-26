@@ -607,6 +607,14 @@ i {
     color: #007396;
 }
 
+.skill-item span.bootstrap, i.bootstrap {
+    color: #7952b3;
+}
+
+.skill-item span.node, i.node {
+    color: #339933;
+}
+
 /* Section Projets */
 .projects {
     background: var(--dark-bg);
