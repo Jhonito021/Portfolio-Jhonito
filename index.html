@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a href="#home" class="nav-link">
                         <i class="fas fa-home"></i>
-                        <span>Acceuil</span>
+                        <span>Accueil</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -50,7 +50,6 @@
 
     <!-- Section Accueil -->
     <section id="home" class="hero">
-        <!-- <video src="assets/video/foutre.mp4" class="foutre" autoplay muted loop></video> -->
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-image">
@@ -94,7 +93,7 @@
                 </div>
                 <div class="skills">
                     <h3>Mes compétences</h3>
-                    <div class="skills-grid">
+                    <d!iv class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-html5 html"></i>
                             <span class="html">HTML5</span>
@@ -128,12 +127,20 @@
                             <span class="node">node</span>
                         </div>
                         <div class="skill-item">
-                            <i class="tech-tag fab fa-python python"></i>
+                            <i class="fab fa-python python"></i>
                             <span class="python">Python</span>
                         </div>
                         <div class="skill-item">
-                            <i class="tech-tag fab fa-java java"></i>
+                            <i class="fab fa-java java"></i>
                             <span class="java">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android android"></i>
+                            <span class="android">Android</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github github"></i>
+                            <span class="github">GitHub</span>
                         </div>
                     </div>
                 </div>
@@ -264,12 +271,6 @@
         const option = { year: 'numeric', month: 'long'};
         const dates = date.toLocaleDateString(undefined, option);
         document.getElementById ('date').textContent = dates;
-
-        if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js")
-    .then(() => console.log("Service Worker enregistré ✅"))
-    .catch(err => console.error("Erreur Service Worker ❌", err));
-}
     </script>
 </body>
 </html>

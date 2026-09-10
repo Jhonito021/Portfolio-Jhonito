@@ -615,6 +615,10 @@ i {
     color: #339933;
 }
 
+.skill-item span.android, i.android {
+    color: #3ddc84;
+}
+
 /* Section Projets */
 .projects {
     background: var(--dark-bg);
