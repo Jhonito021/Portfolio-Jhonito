@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        
         navbar.style.boxShadow = '0 2px 20px rgba(255, 107, 53, 0.3)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        
         navbar.style.boxShadow = '0 0 20px rgba(255, 107, 53, 0.3)';
     }
 });
