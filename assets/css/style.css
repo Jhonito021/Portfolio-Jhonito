@@ -619,6 +619,22 @@ i {
     color: #3ddc84;
 }
 
+.skill-item span.angular, i.angular {
+    color: #dd0031;
+}
+
+.skill-item span.TypeScript, i.TypeScript {
+    color: #3178c6;
+}
+
+.skill-item span.express, i.express {
+    color: #444;
+}
+
+.skill-item span.leaf, i.leaf {
+    color: #6db33f;
+}
+
 /* Section Projets */
 .projects {
     background: var(--dark-bg);
