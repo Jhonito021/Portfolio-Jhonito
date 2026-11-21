@@ -702,6 +702,16 @@ i.leaf {
   color: #6db33f;
 }
 
+.skill-item span.git,
+i.git {
+  color: #f05032;
+} 
+
+.skill-item span.laravel,
+i.laravel {
+  color: #ff2d20;
+}
+
 /* Section Projets */
 .projects {
   background: var(--dark-bg);

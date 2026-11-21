@@ -74,7 +74,7 @@ window.portfolioData = {
     {
       name: "Outils",
       skills: [
-        { name: "Git", icon: "fab fa-git-alt", iconClass: "github" },
+        { name: "Git", icon: "fab fa-git-alt", iconClass: "git" },
         { name: "GitHub", icon: "fab fa-github", iconClass: "github" },
         { name: "Vercel", icon: "fa-solid fa-cloud", iconClass: "vercel" },
       ],
