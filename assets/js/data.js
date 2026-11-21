@@ -102,7 +102,14 @@ window.portfolioData = {
       title: "Site Medical",
       description:
         "Développement d'un site médical pour voir les médecins, consultants et patients.",
-      image: "assets/images/projet1.jpg",
+      details:
+        "Plateforme web permettant de consulter les médecins, les consultations et les informations des patients.",
+      image: "assets/images/screenshots/site-medical/site-medical-0.jpg",
+      screenshots: [
+        "assets/images/screenshots/site-medical/site-medical-1.jpg",
+        "assets/images/screenshots/site-medical/site-medical-2.jpg",
+        "assets/images/screenshots/site-medical/site-medical-3.jpg",
+      ],
       technologies: [
         { icon: "fab fa-html5", iconClass: "html" },
         { icon: "fab fa-css3-alt", iconClass: "css" },
@@ -115,7 +122,17 @@ window.portfolioData = {
       title: "Agenda Personnel",
       description:
         "Application web pour la gestion de tâches et de l'emploi du temps avec interface responsive.",
-      image: "assets/images/projet2.jpg",
+      details:
+        "Application proposant la création de tâches, leur organisation par priorité et la gestion d'un emploi du temps personnel.",
+      image:
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-0.jpg",
+      screenshots: [
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-1.jpg",
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-2.jpg",
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-3.jpg",
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-4.jpg",
+        "assets/images/screenshots/agenda-personnel/agenda-personnel-5.jpg",
+      ],
       technologies: [
         { icon: "fab fa-html5", iconClass: "html" },
         { icon: "fab fa-css3-alt", iconClass: "css" },
@@ -128,7 +145,16 @@ window.portfolioData = {
       title: "TwentyOne Garage",
       description:
         "Une application web pour la gestion d'un garage automobile pour suivre l'entretien.",
-      image: "assets/images/projet4.jpg",
+      details:
+        "Application de gestion de garage pour suivre les véhicules, les interventions, les rendez-vous et l'état des réparations.",
+      image:
+        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-0.jpg",
+      screenshots: [
+        "assets/images/screenshots/twentyone-garage/twenty-one-garage-1.jpg",
+        "assets/images/screenshots/twentyone-garage/twenty-one-garage-2.jpg",
+        "assets/images/screenshots/twentyone-garage/twenty-one-garage-3.jpg",
+        "assets/images/screenshots/twentyone-garage/twenty-one-garage-4.jpg",
+      ],
       technologies: [
         { icon: "fab fa-react", iconClass: "react" },
         { icon: "fab fa-node-js", iconClass: "node" },
@@ -140,7 +166,18 @@ window.portfolioData = {
       title: "Tantsaha Connect",
       description:
         "Une application web et mobile destinée aux agriculteurs malagasy pour gérer leurs activités agricoles.",
-      image: "assets/images/projet5.jpg",
+      details:
+        "Solution destinée aux agriculteurs pour organiser les cultures, suivre les activités agricoles et accéder aux services utiles.",
+      image:
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-0.jpg",
+      screenshots: [
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-1.jpg",
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-2.jpg",
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-3.jpg",
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-4.jpg",
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-5.jpg",
+        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-6.jpg",
+      ],
       technologies: [
         { icon: "fab fa-react", iconClass: "react" },
         { icon: "fab fa-node-js", iconClass: "node" },
@@ -152,7 +189,18 @@ window.portfolioData = {
       title: "e-pharmacie",
       description:
         "Une application web pour la gestion d'une pharmacie, incluant la gestion des médicaments, des fournisseurs et des clients.",
-      image: "assets/images/projet6.jpg",
+      details:
+        "Système de gestion pour administrer les médicaments, les fournisseurs, les ventes, les clients et les stocks d'une pharmacie.",
+      image: "assets/images/screenshots/e-pharmacie/e-pharmacie-0.jpg",
+      screenshots: [
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-1.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-2.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-3.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-4.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-5.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-6.jpg",
+        "assets/images/screenshots/e-pharmacie/e-pharmacie-7.jpg",
+      ],
       technologies: [
         { icon: "fab fa-python", iconClass: "python" },
         { icon: "fab fa-html5", iconClass: "html" },

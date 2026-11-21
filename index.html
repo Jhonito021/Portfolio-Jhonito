@@ -60,7 +60,7 @@
         <div class="hero-content">
           <div class="hero-image">
             <img
-              src="assets/images/portrait_sans_fond.png"
+              src="assets/images/profile/portrait_sans_fond.png"
               alt="Photo de profil"
               class="profile-img"
             />
@@ -162,6 +162,43 @@
         <p>&copy; <span id="date"></span> Jhonito 021. Tous droits réservés.</p>
       </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-close-modal></div>
+      <div
+        class="project-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-modal-title"
+      >
+        <button
+          type="button"
+          class="project-modal-close"
+          aria-label="Fermer"
+          data-close-modal
+        >
+          &times;
+        </button>
+        <div id="project-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+      <div class="image-lightbox-backdrop" data-close-lightbox></div>
+      <div class="image-lightbox-content" role="dialog" aria-modal="true">
+        <button
+          type="button"
+          class="image-lightbox-close"
+          aria-label="Fermer l'image"
+          data-close-lightbox
+        >
+          &times;
+        </button>
+        <img id="image-lightbox-preview" src="" alt="Aperçu du projet" />
+      </div>
+    </div>
 
     <script src="assets/js/data.js"></script>
     <script src="assets/js/script.js"></script>

@@ -455,10 +455,11 @@ function renderProjects() {
   if (!grid || !window.portfolioData) return;
 
   grid.innerHTML = window.portfolioData.projects
-    .map((project) => {
+    .map((project, index) => {
       const technologies = project.technologies
         .map(
-          (tech) => `<i class="tech-tag ${tech.icon} ${tech.iconClass}"></i>`,
+          (tech) =>
+            `<i class="tech-tag ${tech.icon} ${tech.iconClass}" title="${tech.iconClass}"></i>`,
         )
         .join("");
 
@@ -471,11 +472,119 @@ function renderProjects() {
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                     <div class="project-tech">${technologies}</div>
+                    <button type="button" class="project-details-btn" data-project-index="${index}">
+                        Voir le projet <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>`;
     })
     .join("");
+
+  document.querySelectorAll(".project-details-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      openProjectModal(
+        window.portfolioData.projects[Number(button.dataset.projectIndex)],
+      );
+    });
+  });
 }
+
+function openProjectModal(project) {
+  const modal = document.getElementById("project-modal");
+  const body = document.getElementById("project-modal-body");
+  if (!modal || !body || !project) return;
+
+  const technologies = project.technologies
+    .map((tech) => `<i class="tech-tag ${tech.icon} ${tech.iconClass}"></i>`)
+    .join("");
+
+  const configuredScreenshots = project.screenshots || [];
+  const screenshots = [...configuredScreenshots];
+
+  while (screenshots.length < 3) {
+    screenshots.push("");
+  }
+
+  const screenshotMarkup = screenshots
+    .map((screen, index) =>
+      screen
+        ? `<img src="${screen}" alt="Capture d'écran ${index + 1} de ${project.title}" class="project-screenshot-image">`
+        : `<div class="screenshots-placeholder">Capture d'écran ${index + 1}</div>`,
+    )
+    .join("");
+
+  body.innerHTML = `
+    <div class="project-modal-header">
+      <span class="project-modal-label">Projet</span>
+      <h2 id="project-modal-title">${project.title}</h2>
+    </div>
+    <p class="project-modal-description">${project.details || project.description}</p>
+    <div class="project-modal-tech">${technologies}</div>
+    <div class="project-screenshots">
+      ${screenshotMarkup || `<p class="screenshots-placeholder">Les captures d'écran seront ajoutées prochainement.</p>`}
+    </div>`;
+
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+
+  body.querySelectorAll(".project-screenshot-image").forEach((image) => {
+    image.addEventListener("click", () => {
+      openImageLightbox(image.getAttribute("src"), image.getAttribute("alt"));
+    });
+  });
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById("project-modal");
+  if (!modal) return;
+
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  closeImageLightbox();
+  document.body.classList.remove("modal-open");
+}
+
+function openImageLightbox(src, alt) {
+  const lightbox = document.getElementById("image-lightbox");
+  const preview = document.getElementById("image-lightbox-preview");
+  if (!lightbox || !preview || !src) return;
+
+  preview.setAttribute("src", src);
+  preview.setAttribute("alt", alt || "Aperçu du projet");
+  lightbox.classList.add("active");
+  lightbox.setAttribute("aria-hidden", "false");
+}
+
+function closeImageLightbox() {
+  const lightbox = document.getElementById("image-lightbox");
+  const preview = document.getElementById("image-lightbox-preview");
+  if (!lightbox || !preview) return;
+
+  lightbox.classList.remove("active");
+  lightbox.setAttribute("aria-hidden", "true");
+  preview.setAttribute("src", "");
+}
+
+document.querySelectorAll("[data-close-modal]").forEach((element) => {
+  element.addEventListener("click", closeProjectModal);
+});
+
+document.querySelectorAll("[data-close-lightbox]").forEach((element) => {
+  element.addEventListener("click", closeImageLightbox);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+
+  const lightbox = document.getElementById("image-lightbox");
+  if (lightbox && lightbox.classList.contains("active")) {
+    closeImageLightbox();
+    return;
+  }
+
+  closeProjectModal();
+});
 
 function renderSocialLinks() {
   const container = document.getElementById("social-links");
