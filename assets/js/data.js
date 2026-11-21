@@ -3,14 +3,12 @@ window.portfolioData = {
     {
       period: "2024-jusqu'à présent",
       title: "Développement application Web & Mobile",
-      institution:
-        "ESMIA (Ecole Supérieure de Management et d'Informatique Appliquée)",
+      institution: "ESMIA (Ecole Supérieure de Management et d'Informatique Appliquée)",
     },
     {
       period: "2023-2024",
       title: "Ingénierie en Signaux et Systèmes Associées",
-      institution:
-        "ISGEI (Institut Supérieur de Génie Electronique Informatique)",
+      institution: "ISGEI (Institut Supérieur de Génie Electronique Informatique)",
     },
     {
       period: "2022-2023",
@@ -32,19 +30,11 @@ window.portfolioData = {
     {
       name: "Langages",
       skills: [
-        {
-          name: "JavaScript",
-          icon: "fab fa-js-square",
-          iconClass: "JavaScript",
-        },
+        { name: "JavaScript", icon: "fab fa-js-square", iconClass: "JavaScript", },
         { name: "Python", icon: "fab fa-python", iconClass: "python" },
         { name: "Java", icon: "fab fa-java", iconClass: "java" },
         { name: "PHP", icon: "fab fa-php", iconClass: "php" },
-        {
-          name: "TypeScript",
-          icon: "fa-solid fa-code",
-          iconClass: "TypeScript",
-        },
+        { name: "TypeScript", icon: "fa-solid fa-code", iconClass: "TypeScript" },
         { name: "C", icon: "", iconClass: "" },
       ],
     },
@@ -56,24 +46,17 @@ window.portfolioData = {
         { name: "Bootstrap", icon: "fab fa-bootstrap", iconClass: "bootstrap" },
         { name: "HTML5", icon: "fab fa-html5", iconClass: "html" },
         { name: "CSS3", icon: "fab fa-css3-alt", iconClass: "css" },
-        {
-          name: "JavaScript",
-          icon: "fab fa-js-square",
-          iconClass: "JavaScript",
-        },
+        {name: "JavaScript", icon: "fab fa-js-square", iconClass: "JavaScript"},
       ],
     },
     {
       name: "Backend",
       skills: [
         { name: "Node.js", icon: "fab fa-node-js", iconClass: "node" },
-        {
-          name: "Express.js",
-          icon: "fa-solid fa-server",
-          iconClass: "express",
-        },
+        { name: "Express.js", icon: "fa-solid fa-server", iconClass: "express" },
         { name: "Django", icon: "fab fa-python", iconClass: "python" },
         { name: "Spring Boot", icon: "fa-solid fa-leaf", iconClass: "leaf" },
+        { name: "Laravel", icon: "fa-brands fa-laravel", iconClass: "laravel"}
       ],
     },
     {
@@ -100,10 +83,8 @@ window.portfolioData = {
   projects: [
     {
       title: "Site Medical",
-      description:
-        "Développement d'un site médical pour voir les médecins, consultants et patients.",
-      details:
-        "Plateforme web permettant de consulter les médecins, les consultations et les informations des patients.",
+      description: "Développement d'un site médical pour voir les médecins, consultants et patients.",
+      details: "Plateforme web permettant de consulter les médecins, les consultations et les informations des patients.",
       image: "assets/images/screenshots/site-medical/site-medical-0.jpg",
       screenshots: [
         "assets/images/screenshots/site-medical/site-medical-1.jpg",
@@ -120,12 +101,9 @@ window.portfolioData = {
     },
     {
       title: "Agenda Personnel",
-      description:
-        "Application web pour la gestion de tâches et de l'emploi du temps avec interface responsive.",
-      details:
-        "Application proposant la création de tâches, leur organisation par priorité et la gestion d'un emploi du temps personnel.",
-      image:
-        "assets/images/screenshots/agenda-personnel/agenda-personnel-0.jpg",
+      description: "Application web pour la gestion de tâches et de l'emploi du temps avec interface responsive.",
+      details: "Application proposant la création de tâches, leur organisation par priorité et la gestion d'un emploi du temps personnel.",
+      image: "assets/images/screenshots/agenda-personnel/agenda-personnel-0.jpg",
       screenshots: [
         "assets/images/screenshots/agenda-personnel/agenda-personnel-1.jpg",
         "assets/images/screenshots/agenda-personnel/agenda-personnel-2.jpg",
@@ -143,12 +121,9 @@ window.portfolioData = {
     },
     {
       title: "TwentyOne Garage",
-      description:
-        "Une application web pour la gestion d'un garage automobile pour suivre l'entretien.",
-      details:
-        "Application de gestion de garage pour suivre les véhicules, les interventions, les rendez-vous et l'état des réparations.",
-      image:
-        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-0.jpg",
+      description: "Une application web pour la gestion d'un garage automobile pour suivre l'entretien.",
+      details: "Application de gestion de garage pour suivre les véhicules, les interventions, les rendez-vous et l'état des réparations.",
+      image: "assets/images/screenshots/twenty-one-garage/twenty-one-garage-0.jpg",
       screenshots: [
         "assets/images/screenshots/twentyone-garage/twenty-one-garage-1.jpg",
         "assets/images/screenshots/twentyone-garage/twenty-one-garage-2.jpg",
@@ -164,12 +139,9 @@ window.portfolioData = {
     },
     {
       title: "Tantsaha Connect",
-      description:
-        "Une application web et mobile destinée aux agriculteurs malagasy pour gérer leurs activités agricoles.",
-      details:
-        "Solution destinée aux agriculteurs pour organiser les cultures, suivre les activités agricoles et accéder aux services utiles.",
-      image:
-        "assets/images/screenshots/tantsaha-connect/tantsaha-connect-0.jpg",
+      description: "Une application web et mobile destinée aux agriculteurs malagasy pour gérer leurs activités agricoles.",
+      details: "Solution destinée aux agriculteurs pour organiser les cultures, suivre les activités agricoles et accéder aux services utiles.",
+      image: "assets/images/screenshots/tantsaha-connect/tantsaha-connect-0.jpg",
       screenshots: [
         "assets/images/screenshots/tantsaha-connect/tantsaha-connect-1.jpg",
         "assets/images/screenshots/tantsaha-connect/tantsaha-connect-2.jpg",
@@ -187,10 +159,8 @@ window.portfolioData = {
     },
     {
       title: "e-pharmacie",
-      description:
-        "Une application web pour la gestion d'une pharmacie, incluant la gestion des médicaments, des fournisseurs et des clients.",
-      details:
-        "Système de gestion pour administrer les médicaments, les fournisseurs, les ventes, les clients et les stocks d'une pharmacie.",
+      description: "Une application web pour la gestion d'une pharmacie, incluant la gestion des médicaments, des fournisseurs et des clients.",
+      details: "Système de gestion pour administrer les médicaments, les fournisseurs, les ventes, les clients et les stocks d'une pharmacie.",
       image: "assets/images/screenshots/e-pharmacie/e-pharmacie-0.jpg",
       screenshots: [
         "assets/images/screenshots/e-pharmacie/e-pharmacie-1.jpg",
