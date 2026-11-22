@@ -125,10 +125,10 @@ window.portfolioData = {
       details: "Application de gestion de garage pour suivre les véhicules, les interventions, les rendez-vous et l'état des réparations.",
       image: "assets/images/screenshots/twenty-one-garage/twenty-one-garage-0.jpg",
       screenshots: [
-        "assets/images/screenshots/twentyone-garage/twenty-one-garage-1.jpg",
-        "assets/images/screenshots/twentyone-garage/twenty-one-garage-2.jpg",
-        "assets/images/screenshots/twentyone-garage/twenty-one-garage-3.jpg",
-        "assets/images/screenshots/twentyone-garage/twenty-one-garage-4.jpg",
+        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-1.jpg",
+        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-2.jpg",
+        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-3.jpg",
+        "assets/images/screenshots/twenty-one-garage/twenty-one-garage-4.jpg",
       ],
       technologies: [
         { icon: "fab fa-react", iconClass: "react" },
